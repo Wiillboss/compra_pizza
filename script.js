@@ -3,6 +3,8 @@ let modalQt = 1;
 const c = (el) =>  document.querySelector(el);
 const cs = (el) => document.querySelectorAll(el);
 
+
+// Listagem das pizzas
 pizzaJson.map((item, index) => {
     let pizzaItem = c('.models .pizza-item').cloneNode(true);
 
@@ -42,3 +44,8 @@ pizzaJson.map((item, index) => {
     
     c('.pizza-area').append( pizzaItem) ;
 });
+
+// Eventos do Modal
+function closeModal() {
+    
+}
