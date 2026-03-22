@@ -81,11 +81,12 @@ c('.pizzaInfo--addButton').addEventListener('click', () => {
 
     let identifier = pizzaJson[modalKey].id + '@' + size;
 
-    let key = cart.findIndex((item) => item.identifier = identifier);
+    let key = cart.findIndex((item) => item.identifier == identifier);
     /* O codigo abaixo é o mesmo que o que está acima, entretanto o se cima está mais resumido
-    let key = cart.findIndex((item) =>{
-        return item.identifier = identifier
-    });
+        
+        let key = cart.findIndex((item) =>{
+            return item.identifier = identifier
+        });
     */
 
     if (key > -1) {
