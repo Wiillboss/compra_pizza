@@ -72,3 +72,9 @@ cs('.pizzaInfo--size').forEach((size, sizeIndex) =>{
         size.classList.add('selected');     
     });
 });
+
+c('.pizzaInfo--addButton').addEventListener('click', () =>{
+    //Qual a pizza?
+    //Qual a tamanho?
+    //Quantas a pizzas?
+});
